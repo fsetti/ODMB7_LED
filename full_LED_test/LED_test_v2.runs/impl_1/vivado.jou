@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Nov 19 19:38:04 2020
+# Process ID: 54548
+# Current directory: /data/fsetti/led/led.runs/impl_1
+# Command line: vivado -log LED_blinker.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source LED_blinker.tcl -notrace
+# Log file: /data/fsetti/led/led.runs/impl_1/LED_blinker.vdi
+# Journal file: /data/fsetti/led/led.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source LED_blinker.tcl -notrace
