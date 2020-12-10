@@ -9,6 +9,11 @@ use unisim.vcomponents.all;
 
 entity LED_blinker is
     port (
+        KUS_DL_SEL          : out    std_logic;
+        FPGA_SEL_18         : out    std_logic;
+        RST_CLKS_18_B       : out    std_logic;
+        DONE                : in     std_logic;
+
         LEDS_CFV_11         : out    std_logic;
         CMS_CLK_FPGA_P      : in     std_logic;
         CMS_CLK_FPGA_N      : in     std_logic;
@@ -106,6 +111,7 @@ architecture Behavioral of LED_blinker is
 
     signal clk_lf               :   std_logic;
     signal clk_lf_i             :   std_logic;
+    signal counter_lf           : integer :=0;
 
 
 begin
@@ -301,6 +307,10 @@ begin
         O       => clk_ref_5
     );
     
+
+    KUS_DL_SEL  <= '1';
+    FPGA_SEL_18  <= '0';
+    RST_CLKS_18_B  <= '1';
     
 
 process (cms_clk) is
@@ -455,16 +465,30 @@ process (clk_emc) is
         end if;
 end process;
 
-  
+
 process (clk_lf) is
     begin
         if rising_edge(clk_lf) then
-            LEDS_CFV_9 <= '1';
-        end if;
-        if falling_edge(clk_lf) then
-            LEDS_CFV_9 <= '0';
+            if ( counter_lf <  1) then
+                counter_lf <= counter_lf + 1;
+                LEDS_CFV_9 <= '1';
+            else
+                LEDS_CFV_9 <='0';
+                counter_lf<=0;
+            end if;
         end if;
 end process;
+
+  
+--process (clk_lf) is
+--    begin
+--        if rising_edge(clk_lf) then
+--            LEDS_CFV_9 <= '1';
+--        end if;
+--        if falling_edge(clk_lf) then
+--            LEDS_CFV_9 <= '0';
+--        end if;
+--end process;
 
 
 end Behavioral;

@@ -1,3 +1,15 @@
+set_property PACKAGE_PIN U21        [get_ports KUS_DL_SEL]
+set_property IOSTANDARD LVCMOS18    [get_ports KUS_DL_SEL]
+
+set_property PACKAGE_PIN T23        [get_ports FPGA_SEL_18]
+set_property IOSTANDARD LVCMOS18    [get_ports FPGA_SEL_18]
+
+set_property PACKAGE_PIN W29        [get_ports RST_CLKS_18_B]
+set_property IOSTANDARD LVCMOS18    [get_ports RST_CLKS_18_B]
+
+set_property PACKAGE_PIN L9         [get_ports DONE]
+set_property IOSTANDARD LVCMOS18    [get_ports DONE]
+
 #FPGA CMS CLOCK
 set_property PACKAGE_PIN AK17       [get_ports CMS_CLK_FPGA_P]
 set_property PACKAGE_PIN AK16       [get_ports CMS_CLK_FPGA_N]
@@ -8,7 +20,7 @@ set_property IOSTANDARD LVCMOS18    [get_ports LEDS_CFV_11]
 
 #REF_CLK_1
 set_property PACKAGE_PIN AF6        [get_ports REF_CLK_1_P]
-set_property PACKAGE_PIN AF5        [get_ports REF_CLK_1_N]
+set_property PACKAGE_PIN    AF5        [get_ports REF_CLK_1_N]
 
 set_property PACKAGE_PIN T27        [get_ports LEDS_CFV_1]
 set_property IOSTANDARD LVCMOS18    [get_ports LEDS_CFV_1]
@@ -65,7 +77,7 @@ set_property IOSTANDARD LVCMOS18    [get_ports LEDS_CFV_7]
 #EMCCLK
 set_property PACKAGE_PIN K20        [get_ports EMCCLK]
 #set_property IOSTANDARD LVCMOS18    [get_ports EMCCLK]
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets IBUFG_EMCCLK/O]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets {IBUFG_EMCCLK/O}]
 
 set_property PACKAGE_PIN R25        [get_ports LEDS_CFV_6]
 set_property IOSTANDARD LVCMOS18    [get_ports LEDS_CFV_6]
@@ -74,7 +86,8 @@ set_property IOSTANDARD LVCMOS18    [get_ports LEDS_CFV_6]
 #LF_CLK
 set_property PACKAGE_PIN AJ16       [get_ports LF_CLK]
 #set_property IOSTANDARD LVCMOS18    [get_ports LF_CLK]
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets IBUFG_LF_LK/O]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets {IBUFG_LFCLK/O}]
 
 set_property PACKAGE_PIN P23        [get_ports LEDS_CFV_9]
 set_property IOSTANDARD LVCMOS18    [get_ports LEDS_CFV_9]
+

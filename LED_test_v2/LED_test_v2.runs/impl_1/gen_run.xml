@@ -1,26 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xcku040-ffva1156-2-e" LaunchTime="1605843162">
-  <File Type="ROUTE-PWR-RPX" Name="LED_blinker_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="LED_blinker_route_status.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="LED_blinker_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="LED_blinker_postroute_physopt_bb.dcp"/>
-  <File Type="RDI-RDI" Name="LED_blinker.vdi"/>
-  <File Type="ROUTE-STATUS-PB" Name="LED_blinker_route_status.pb"/>
-  <File Type="BG-BIT" Name="LED_blinker.bit"/>
-  <File Type="RCFI_FILE" Name="LED_blinker.rcfi"/>
-  <File Type="BG-DRC" Name="LED_blinker.drc"/>
-  <File Type="NPI_FILE" Name="LED_blinker.npi"/>
-  <File Type="BITSTR-LTX" Name="LED_blinker.ltx"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="BITSTR-SYSDEF" Name="LED_blinker.sysdef"/>
+  <File Type="BITSTR-NKY" Name="LED_blinker.nky"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="LED_blinker_timing_summary_routed.rpt"/>
+  <File Type="BG-BIN" Name="LED_blinker.bin"/>
+  <File Type="ROUTE-PWR-SUM" Name="LED_blinker_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="LED_blinker_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="LED_blinker_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="LED_blinker_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="LED_blinker_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="LED_blinker_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="LED_blinker_routed_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="LED_blinker_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DCP" Name="LED_blinker_routed.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="LED_blinker_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-ERROR-DCP" Name="LED_blinker_routed_error.dcp"/>
+  <File Type="OPT-DRC" Name="LED_blinker_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="LED_blinker_opt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="LED_blinker_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="LED_blinker_reports.tcl"/>
+  <File Type="ROUTE-TIMING-RPX" Name="LED_blinker_timing_summary_routed.rpx"/>
+  <File Type="RNPI_FILE" Name="LED_blinker.rnpi"/>
+  <File Type="PDI-FILE" Name="LED_blinker.pdi"/>
   <File Type="BG-BGN" Name="LED_blinker.bgn"/>
   <File Type="RBD_FILE" Name="LED_blinker.rbd"/>
-  <File Type="PDI-FILE" Name="LED_blinker.pdi"/>
-  <File Type="ROUTE-BUS-SKEW" Name="LED_blinker_bus_skew_routed.rpt"/>
-  <File Type="BITSTR-MMI" Name="LED_blinker.mmi"/>
   <File Type="ROUTE-CLK" Name="LED_blinker_clock_utilization_routed.rpt"/>
   <File Type="BITSTR-BMM" Name="LED_blinker_bd.bmm"/>
+  <File Type="BITSTR-LTX" Name="LED_blinker.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="LED_blinker.sysdef"/>
+  <File Type="RCFI_FILE" Name="LED_blinker.rcfi"/>
+  <File Type="BG-BIT" Name="LED_blinker.bit"/>
+  <File Type="ROUTE-STATUS-PB" Name="LED_blinker_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="LED_blinker_route_status.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="LED_blinker_postroute_physopt.dcp"/>
+  <File Type="ROUTE-PWR-RPX" Name="LED_blinker_power_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="LED_blinker_postroute_physopt_bb.dcp"/>
+  <File Type="NPI_FILE" Name="LED_blinker.npi"/>
+  <File Type="BG-DRC" Name="LED_blinker.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="LED_blinker_postplace_pwropt.dcp"/>
+  <File Type="RDI-RDI" Name="LED_blinker.vdi"/>
+  <File Type="ROUTE-BUS-SKEW" Name="LED_blinker_bus_skew_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="LED_blinker.mmi"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="LED_blinker_incremental_reuse_pre_placed.rpt"/>
   <File Type="PLACE-CTRL" Name="LED_blinker_control_sets_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="LED_blinker_utilization_placed.pb"/>
@@ -36,26 +56,6 @@
   <File Type="ROUTE-TIMING-PB" Name="LED_blinker_timing_summary_routed.pb"/>
   <File Type="PHYSOPT-DCP" Name="LED_blinker_physopt.dcp"/>
   <File Type="BITSTR-RBT" Name="LED_blinker.rbt"/>
-  <File Type="RNPI_FILE" Name="LED_blinker.rnpi"/>
-  <File Type="ROUTE-TIMING-RPX" Name="LED_blinker_timing_summary_routed.rpx"/>
-  <File Type="REPORTS-TCL" Name="LED_blinker_reports.tcl"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="LED_blinker_bus_skew_routed.rpx"/>
-  <File Type="OPT-DCP" Name="LED_blinker_opt.dcp"/>
-  <File Type="OPT-DRC" Name="LED_blinker_drc_opted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="LED_blinker_routed_error.dcp"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="LED_blinker_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-DCP" Name="LED_blinker_routed.dcp"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="LED_blinker_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="LED_blinker_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="LED_blinker_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="LED_blinker_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="LED_blinker_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="LED_blinker_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-PWR" Name="LED_blinker_power_routed.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="LED_blinker_power_summary_routed.pb"/>
-  <File Type="BG-BIN" Name="LED_blinker.bin"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="LED_blinker_timing_summary_routed.rpt"/>
-  <File Type="BITSTR-NKY" Name="LED_blinker.nky"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/new/LED_blinker.vhd">
