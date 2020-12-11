@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="fsetti" Host="higgs.physics.ucsb.edu" Pid="45012" HostCore="20" HostMemory="131548364">
-    </Process>
-</ProcessHandle>
