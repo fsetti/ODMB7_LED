@@ -1,0 +1,16 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date              : Thu Nov 19 19:36:11 2020
+| Host              : higgs.physics.ucsb.edu running 64-bit unknown
+| Command           : report_bus_skew -warn_on_violation -file LED_blinker_bus_skew_routed.rpt -pb LED_blinker_bus_skew_routed.pb -rpx LED_blinker_bus_skew_routed.rpx
+| Design            : LED_blinker
+| Device            : xcku040-ffva1156
+| Speed File        : -2  PRODUCTION 1.25 12-04-2018
+| Temperature Grade : E
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+
