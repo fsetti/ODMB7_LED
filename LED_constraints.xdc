@@ -10,6 +10,16 @@ set_property IOSTANDARD LVCMOS18    [get_ports RST_CLKS_18_B]
 set_property PACKAGE_PIN L9         [get_ports DONE]
 set_property IOSTANDARD LVCMOS18    [get_ports DONE]
 
+
+#set_property BITSTREAM.GENERAL.COMPRESS TRUE [current_design]
+#set_property BITSTREAM.CONFIG.CONFIGURATE 33 [current_design]
+#set_property CONFIG_VOLTAGE 1.8              [current_design]
+#set_property CFGBVS GND                      [current_design]
+#set_property BITSTREAM.CONFIG.SPI_32BIT_ADDR YES [current_design]
+#set_property BITSTREAM.CONFIG.SPI_BUSWIDTH 4 [current_design]
+#set_property BITSTREAM.CONFIG.SPI_FALL_EDGE YES [current_design]
+
+
 #FPGA CMS CLOCK
 set_property PACKAGE_PIN AK17       [get_ports CMS_CLK_FPGA_P]
 set_property PACKAGE_PIN AK16       [get_ports CMS_CLK_FPGA_N]
@@ -22,8 +32,8 @@ set_property IOSTANDARD LVCMOS18    [get_ports LEDS_CFV_11]
 set_property PACKAGE_PIN AF6        [get_ports REF_CLK_1_P]
 set_property PACKAGE_PIN    AF5     [get_ports REF_CLK_1_N]
 
-set_property DIFF_TERM TRUE         [get_ports REF_CLK_1_P]
-set_property DIFF_TERM TRUE         [get_ports REF_CLK_1_N]
+#set_property DIFF_TERM TRUE         [get_ports REF_CLK_1_P]
+#set_property DIFF_TERM TRUE         [get_ports REF_CLK_1_N]
 
 set_property PACKAGE_PIN T27        [get_ports LEDS_CFV_1]
 set_property IOSTANDARD LVCMOS18    [get_ports LEDS_CFV_1]
@@ -33,8 +43,8 @@ set_property IOSTANDARD LVCMOS18    [get_ports LEDS_CFV_1]
 set_property PACKAGE_PIN P6         [get_ports REF_CLK_2_P]
 set_property PACKAGE_PIN P5         [get_ports REF_CLK_2_N]
 
-set_property DIFF_TERM TRUE         [get_ports REF_CLK_2_P]
-set_property DIFF_TERM TRUE         [get_ports REF_CLK_2_N]
+#set_property DIFF_TERM TRUE         [get_ports REF_CLK_2_P]
+#set_property DIFF_TERM TRUE         [get_ports REF_CLK_2_N]
 
 set_property PACKAGE_PIN P20        [get_ports LEDS_CFV_0]
 set_property IOSTANDARD LVCMOS18    [get_ports LEDS_CFV_0]
@@ -44,8 +54,8 @@ set_property IOSTANDARD LVCMOS18    [get_ports LEDS_CFV_0]
 set_property PACKAGE_PIN V6         [get_ports REF_CLK_3_P]
 set_property PACKAGE_PIN V5         [get_ports REF_CLK_3_N]
 
-set_property DIFF_TERM TRUE         [get_ports REF_CLK_3_P]
-set_property DIFF_TERM TRUE         [get_ports REF_CLK_3_N]
+#set_property DIFF_TERM TRUE         [get_ports REF_CLK_3_P]
+#set_property DIFF_TERM TRUE         [get_ports REF_CLK_3_N]
 
 set_property PACKAGE_PIN R27        [get_ports LEDS_CFV_3]
 set_property IOSTANDARD LVCMOS18    [get_ports LEDS_CFV_3]
@@ -55,8 +65,8 @@ set_property IOSTANDARD LVCMOS18    [get_ports LEDS_CFV_3]
 set_property PACKAGE_PIN AB6        [get_ports REF_CLK_4_P]
 set_property PACKAGE_PIN AB5        [get_ports REF_CLK_4_N]
 
-set_property DIFF_TERM TRUE         [get_ports REF_CLK_4_P]
-set_property DIFF_TERM TRUE         [get_ports REF_CLK_4_N]
+#set_property DIFF_TERM TRUE         [get_ports REF_CLK_4_P]
+#set_property DIFF_TERM TRUE         [get_ports REF_CLK_4_N]
 
 set_property PACKAGE_PIN N22        [get_ports LEDS_CFV_2]
 set_property IOSTANDARD LVCMOS18    [get_ports LEDS_CFV_2]
@@ -66,8 +76,8 @@ set_property IOSTANDARD LVCMOS18    [get_ports LEDS_CFV_2]
 set_property PACKAGE_PIN M6         [get_ports REF_CLK_5_P]
 set_property PACKAGE_PIN M5         [get_ports REF_CLK_5_N]
 
-set_property DIFF_TERM TRUE         [get_ports REF_CLK_5_P]
-set_property DIFF_TERM TRUE         [get_ports REF_CLK_5_N]
+#set_property DIFF_TERM TRUE         [get_ports REF_CLK_5_P]
+#set_property DIFF_TERM TRUE         [get_ports REF_CLK_5_N]
 
 set_property PACKAGE_PIN R26        [get_ports LEDS_CFV_5]
 set_property IOSTANDARD LVCMOS18    [get_ports LEDS_CFV_5]
@@ -77,8 +87,8 @@ set_property IOSTANDARD LVCMOS18    [get_ports LEDS_CFV_5]
 set_property PACKAGE_PIN AK22       [get_ports GP_CLK_6_P]
 set_property PACKAGE_PIN AK23       [get_ports GP_CLK_6_N]
 
-set_property DIFF_TERM TRUE         [get_ports GP_CLK_6_P]
-set_property DIFF_TERM TRUE         [get_ports GP_CLK_6_N]
+#set_property DIFF_TERM TRUE         [get_ports GP_CLK_6_P]
+#set_property DIFF_TERM TRUE         [get_ports GP_CLK_6_N]
 
 set_property PACKAGE_PIN T25        [get_ports LEDS_CFV_4]
 set_property IOSTANDARD LVCMOS18    [get_ports LEDS_CFV_4]
@@ -88,8 +98,8 @@ set_property IOSTANDARD LVCMOS18    [get_ports LEDS_CFV_4]
 set_property PACKAGE_PIN E18        [get_ports GP_CLK_7_P]
 set_property PACKAGE_PIN E17        [get_ports GP_CLK_7_N]
 
-set_property DIFF_TERM TRUE         [get_ports GP_CLK_7_P]
-set_property DIFF_TERM TRUE         [get_ports GP_CLK_7_N]
+#set_property DIFF_TERM TRUE         [get_ports GP_CLK_7_P]
+#set_property DIFF_TERM TRUE         [get_ports GP_CLK_7_N]
 
 set_property PACKAGE_PIN T24        [get_ports LEDS_CFV_7]
 set_property IOSTANDARD LVCMOS18    [get_ports LEDS_CFV_7]
@@ -112,3 +122,12 @@ set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets {IBUFG_LFCLK/O}]
 set_property PACKAGE_PIN P23        [get_ports LEDS_CFV_9]
 set_property IOSTANDARD LVCMOS18    [get_ports LEDS_CFV_9]
 
+
+
+#Turn Off LEDs
+set_property PACKAGE_PIN R23        [get_ports LEDS_CFV_8]
+set_property IOSTANDARD LVCMOS18    [get_ports LEDS_CFV_8]
+
+
+set_property PACKAGE_PIN P21        [get_ports LEDS_CFV_10]
+set_property IOSTANDARD LVCMOS18    [get_ports LEDS_CFV_10]

@@ -50,7 +50,10 @@ entity LED_blinker is
         EMCCLK              : in     std_logic;
         
         LEDS_CFV_9          : out    std_logic;
-        LF_CLK              : in     std_logic
+        LF_CLK              : in     std_logic;
+
+        LEDS_CFV_8          : out    std_logic;
+        LEDS_CFV_10         : out    std_logic
 
         );
 end LED_blinker;
@@ -311,7 +314,11 @@ begin
     KUS_DL_SEL  <= '1';
     FPGA_SEL_18  <= '0';
     RST_CLKS_18_B  <= '1';
-    
+ 
+ 
+--    turn off un-used LEDs
+    LEDS_CFV_8   <= '1';
+    LEDS_CFV_10   <= '1';
 
 process (cms_clk) is
     begin
